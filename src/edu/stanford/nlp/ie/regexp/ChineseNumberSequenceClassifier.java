@@ -75,7 +75,7 @@ public class ChineseNumberSequenceClassifier extends AbstractSequenceClassifier<
 
   // Patterns we need
   public static final Pattern CURRENCY_WORD_PATTERN =
-      Pattern.compile("元|刀|(?:美|欧|澳|加|日|韩)元|英?镑|法郎|卢比|卢布|马克|先令|克朗|泰?铢|(?:越南)?盾|美分|便士|块钱|毛钱|角钱");
+      Pattern.compile("元|元钱|刀|(?:美|欧|澳|加|日|韩)元|英?镑|法郎|卢比|卢布|马克|先令|克朗|泰?铢|(?:越南)?盾|美分|便士|块钱|毛钱|角钱");
   // In theory 块 钱 should be separated by segmenter, but just in case segmenter fails
   // TODO(yuhao): Need to add support for 块 钱, 毛 钱, 角 钱, 角, 五 块 二
   public static final Pattern PERCENT_WORD_PATTERN1 = Pattern.compile("(?:百分之|千分之).+");
