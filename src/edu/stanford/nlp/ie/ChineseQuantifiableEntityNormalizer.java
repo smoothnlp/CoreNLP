@@ -120,7 +120,7 @@ public class ChineseQuantifiableEntityNormalizer {
     oneCharCurrencyWords = Generics.newHashMap();
     oneCharCurrencyWords.put("刀", '$');
     oneCharCurrencyWords.put("镑", '£');
-    oneCharCurrencyWords.put("元", '元');   // We follow the tradition in English to use 元 instead of ¥ for RMB
+    oneCharCurrencyWords.put("元", ' ');   // We follow the tradition in English to use 元 instead of ¥ for RMB
     // For all other currency, we use default currency symbol $
 
     yearModifiers = Generics.newHashMap();
